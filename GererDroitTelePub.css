@@ -1,154 +1,161 @@
 /* General Styling */
 body {
-  background-color: #111;
-  color: #fff;
-  font-family: sans-serif;
-  margin: 0;
-}
-
-/* Header */
-header {
-  background-color: #222;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.gold-text {
-    font-size: 20px;
-    font-weight: bold;
-    background: url('Image_Dore.jpg') no-repeat;
-    background-size: cover;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-nav ul { 
-    display: flex; 
-    list-style-type: none; 
-    padding: 0; } 
-nav ul li { 
-    margin-right: 20px;
-}
-nav ul li a {
-    font-size: 10px;
-    font-weight: bold;
-    background: url('Image_Dore.jpg') no-repeat;
-    background-size: cover;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-decoration: none;
-}
-.connect-button {
-    font-size: 18px;
-    font-weight: bold;
-    background: url('Image_Dore.jpg') no-repeat;
-    background-size: cover;
-    color: transparent;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-}
-.connect-button-text {
-    color: white; /* Keeps text legible */
-}
-
-.rectangle-container {
+    background-color: #111;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-}
-.rectangle {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
     flex: 1;
+  }
+  
+  /* Header */
+  header {
     background-color: #222;
-    color: white;
-    border: none;
-    border-radius: 5px;
     padding: 10px;
-    width: calc(33.333% - 20px);
-    min-height: 100px; /* Adjust as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .gold-text {
+      font-size: 20px;
+      font-weight: bold;
+      background: url('Image_Dore.jpg') no-repeat;
+      background-size: cover;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+  }
+  nav ul { 
+      display: flex; 
+      list-style-type: none; 
+      padding: 0; 
+  } 
+  nav ul li { 
+      margin-right: 20px;
+  }
+  nav ul li a {
+      font-size: 10px;
+      font-weight: bold;
+      background: url('Image_Dore.jpg') no-repeat;
+      background-size: cover;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-decoration: none;
+  }
+  .connect-button {
+      font-size: 18px;
+      font-weight: bold;
+      background: url('Image_Dore.jpg') no-repeat;
+      background-size: cover;
+      color: transparent;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+  }
+  .connect-button-text {
+      color: white; /* Keeps text legible */
+  }
+  
+  .rectangle-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; /* Space between rectangles */
+      margin-top: 20px;
+      justify-content: space-between; /* Evenly spaced */
+  }
+  .rectangle {
+      background-color: #222;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 20px;
+      width: calc(33.333% - 20px); /* Three per row */
+      text-align: center;
+      box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  header nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav li {
+    margin-right: 20px;
+  }
+  
+  header nav li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header button {
+    background-color: #f0b90b;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Content */
+  main {
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #f0b90b;
+    margin-bottom: 10px;
+  }
+  
+  /* Match Display */
+  .match-display {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .match-display .match-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  .match-display .match-item .team {
+    color: #f0b90b;
+  }
+  
+  .match-display .match-item .score {
+    color: #fff;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #222;
     text-align: center;
-}
-
-header .logo {
-  display: flex;
-  align-items: center;
-}
-
-header .logo img {
-  height: 40px;
-  margin-right: 10px;
-}
-
-header nav {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-header nav li {
-  margin-right: 20px;
-}
-
-header nav li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header button {
-  background-color: #f0b90b;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  color: #111;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* Content */
-main {
-  padding: 20px;
-}
-
-h2 {
-  color: #f0b90b;
-  margin-bottom: 10px;
-}
-
-/* Match Display */
-.match-display {
-  background-color: #222;
-  padding: 10px;
-   border-radius: 5px;
-  margin-top: 20px;
-}
-
-.match-display .match-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 0;
-}
-
-.match-display .match-item .team {
-  color: #f0b90b;
-}
-
-.match-display .match-item .score {
-  color: #fff;
-}
-
-/* Footer */
-footer {
-  background-color: #222;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
+    padding: 10px;
+    width: 100%;
+  }
+  
