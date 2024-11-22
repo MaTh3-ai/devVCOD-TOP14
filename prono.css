@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: grey;
+    background-color: #222;
     padding: 10px 0;
     display: flex;
     align-items: center;
@@ -34,12 +34,14 @@ nav ul li a {
 }
 
 .connect-button {
-    background-color: gold;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
+        background-color: #f0b90b;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        color: #111;
+        font-weight: bold;
+        cursor: pointer;
+      }
 
 h1 {
     color: gold;
@@ -65,7 +67,7 @@ h1 {
 
 .match-info {
     text-align: center;
-    color: gold;
+    color: white;
     flex: 1;
 }
 
@@ -77,4 +79,14 @@ button {
     margin-top: 10px;
     cursor: pointer;
 }
+
+  footer {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
 
