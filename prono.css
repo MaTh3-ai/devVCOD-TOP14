@@ -1,1 +1,80 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: grey;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.connect-button {
+    background-color: gold;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+h1 {
+    color: gold;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.team {
+    text-align: center;
+    flex: 1;
+}
+
+.team img {
+    height: 100px;
+}
+
+.match-info {
+    text-align: center;
+    color: gold;
+    flex: 1;
+}
+
+button {
+    background-color: grey;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
 
