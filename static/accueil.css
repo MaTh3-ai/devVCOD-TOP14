@@ -5,7 +5,6 @@ body {
   font-family: sans-serif;
   margin: 0;
 }
-
 /* Header */
 header {
   background-color: #222;
@@ -13,6 +12,76 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.gold-text {
+  font-size: 20px;
+  font-weight: bold;
+  background: url('Image_Dore.jpg') no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative; /* Position relative pour le texte */
+  z-index: 2; /* Mettre le texte au-dessus de l'image */
+}
+
+nav ul { 
+  display: flex; 
+  list-style-type: none; 
+  padding: 0; 
+} 
+
+nav ul li { 
+  margin-right: 20px;
+}
+
+nav ul li a {
+  font-size: 10px;
+  font-weight: bold;
+  background: url('Image_Dore.jpg') no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-decoration: none;
+}
+
+.connect-button {
+  font-size: 18px;
+  font-weight: bold;
+  background: url('Image_Dore.jpg') no-repeat;
+  background-size: cover;
+  color: transparent;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-radius: 15px;
+}
+.move-right {
+  z-index: 3;
+  color: white; /* Keeps text legible */
+}
+
+.rectangle-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between rectangles */
+  margin-top: 20px;
+  justify-content: space-between; /* Evenly spaced */
+}
+
+.rectangle {
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  width: calc(33.333% - 20px); /* Three per row */
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 header .logo {
@@ -23,6 +92,7 @@ header .logo {
 header .logo img {
   height: 40px;
   margin-right: 10px;
+  border-radius: 10px; /* Arrondir légèrement les bords de l'image */
 }
 
 header nav {
@@ -50,6 +120,7 @@ header button {
   font-weight: bold;
   cursor: pointer;
 }
+
 
 /* Content */
 main {
