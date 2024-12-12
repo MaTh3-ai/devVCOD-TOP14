@@ -1,92 +1,256 @@
-body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #222;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .logo img {
-    height: 50px;
-}
-
-nav ul {
-    list-style: none;
+/* Réinitialisation des marges et de l'encadrement */
+* {
     margin: 0;
     padding: 0;
-    display: flex;
+    box-sizing: border-box;
 }
 
+/* General Styling */
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  /* Header */
+  header { width: 100%; /* Prend toute la largeur de la page */ 
+    background-color: #222; 
+    padding: 10px; display: flex; 
+    justify-content: space-between; 
+    align-items: center; }
+  
+  .gold-text {
+      font-size: 20px;
+      font-weight: bold;
+      background: url('Image_Dore.jpg') no-repeat;
+      background-size: cover;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+  }
+  nav ul { 
+      display: flex; 
+      list-style-type: none; 
+      padding: 0; 
+  } 
+  nav ul li { 
+      margin-right: 20px;
+  }
+  nav ul li a {
+      font-size: 10px;
+      font-weight: bold;
+      background: url('Image_Dore.jpg') no-repeat;
+      background-size: cover;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-decoration: none;
+  }
+  .connect-button {
+      font-size: 18px;
+      font-weight: bold;
+      background: url('Image_Dore.jpg') no-repeat;
+      background-size: cover;
+      color: transparent;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+  }
+  .connect-button-text {
+      color: white; /* Keeps text legible */
+  }
+  
+  .rectangle-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; /* Space between rectangles */
+      margin-top: 20px;
+      justify-content: space-between; /* Evenly spaced */
+  }
+  .rectangle {
+      background-color: #222;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 20px;
+      width: calc(33.333% - 20px); /* Three per row */
+      text-align: center;
+      box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+  
+/* Style pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black; /* Arrière-plan noir */
+    color: white; /* Texte en blanc pour plus de contraste */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Hauteur minimale pour assurer que le contenu soit centré verticalement */
+    margin: 0;
+}
+
+/* Style pour l'en-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style pour le logo */
+.logo img {
+    height: 100px; /* Agrandit les logos */
+}
+
+/* Style pour la navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+/* Style pour les éléments de la navigation */
 nav ul li {
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: gold;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
+/* Style pour le bouton de connexion */
 .connect-button {
-        background-color: #f0b90b;
-        border: none;
-        padding: 8px 15px;
-        border-radius: 5px;
-        color: #111;
-        font-weight: bold;
-        cursor: pointer;
-      }
-
-h1 {
-    color: gold;
-    text-align: left;
-    margin-left: 20px;
-}
-
-.match {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.team {
-    text-align: center;
-    flex: 1;
-}
-
-.team img {
-    height: 100px;
-}
-
-.match-info {
-    text-align: center;
-    color: white;
-    flex: 1;
-}
-
-button {
-    background-color: grey;
-    color: black;
+    background: url('Image_Dore.jpg') no-repeat;
     border: none;
     padding: 10px 20px;
-    margin-top: 10px;
+    color: white;
     cursor: pointer;
 }
 
-  footer {
-    background-color: #222;
+.connect-button:hover {
+    background-color: #e68a00;
+}
+
+/* Style pour la section principale */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%; /* Assurez-vous que le main prenne toute la largeur */
+    min-height: 100vh; /* Hauteur minimale pour assurer que le contenu soit centré verticalement */
+}
+
+/* Style pour le titre */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Style pour le match */
+.match {
+    position: relative; /* Pour positionner correctement les pseudo-éléments */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    width: 80%;
+    max-width: 1200px;
+    background: #111; /* Fond du contenu */
+}
+
+.match::before,
+.match::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    background: url('Image_Dore.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    z-index: -1; /* Place les pseudo-éléments derrière le contenu */
+}
+
+.match::after {
+    filter: blur(4px); /* Ajoute un effet flou pour adoucir les bords */
+}
+
+/* Style pour chaque section dans le match */
+.team-left, .team-right, .match-info {
+    flex: 1; /* S'assure que chaque section prend la même largeur */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajouter de l'espace autour de "match-info" pour centrer */
+.match-info {
+    margin: 0 20px; /* Ajuste cet espace selon tes préférences */
+
+}
+
+/* Style pour les logos des équipes */
+.team img {
+    height: 100px; /* Agrandit les logos */
+    margin-bottom: 10px;
+}
+
+/* Style pour les boutons */
+button {
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Ajout de la transition pour les boutons */
+}
+
+/* Style pour les boutons au survol */
+button:hover {
+    background: url('Image_Dore.jpg') no-repeat;
+}
+
+
+/* Style pour le pied de page */
+footer {
     text-align: center;
     padding: 10px;
-    position: relative;
-    bottom: 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
     width: 100%;
-  }
+}
 
-
+/* Media Queries pour les appareils mobiles */
+@media (max-width: 768px) {
+    .team-right, .team-left {
+        margin: 0;
+    }
+    .match {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-left, .team-right {
+        margin: 10px 0;
+    }
+}
