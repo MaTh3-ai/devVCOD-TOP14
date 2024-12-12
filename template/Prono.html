@@ -7,28 +7,30 @@
     <link rel="stylesheet" href="prono.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Top 14 Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">BILLETERIE</a></li>
-                <li><a href="prono.html">PRONOSTICS</a></li>
-                <li><a href="#">STATISTIQUES</a></li>
-                <li><a href="#">EQUIPES</a></li>
-                <li><a href="#">MON COMPTE</a></li>
-            </ul>
-        </nav>
-        <button class="connect-button">SE CONNECTER</button>
-    </header>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="Top14.png" alt="Top 14 Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="gold-text">BILLETERIE</a></li>
+                    <li><a href="#" class="gold-text">PRONOSTICS</a></li>
+                    <li><a href="#" class="gold-text">STATISTIQUES</a></li>
+                    <li><a href="#" class="gold-text">EQUIPES</a></li>
+                    <li><a href="#" class="gold-text">MON COMPTE</a></li>
+                </ul>
+            </nav>
+            <button class="connect-button"><span class="connect-button-text">SE CONNECTER</span></button>
+        </header>
     <main>
         <h1>Pronostics</h1>
-        <div class="match">
+        <div class="match cadre">
             <div class="team team-left">
                 <img src="toulon_logo.png" alt="Logo Toulon">
-                <p>Toulon</p>
-                <button>Victoire</button>
+                <p></p>
+                <button>Toulon</button>
             </div>
             <div class="match-info">
                 <p>23/11 à 14h30</p>
@@ -36,14 +38,60 @@
             </div>
             <div class="team team-right">
                 <img src="bayonne_logo.png" alt="Logo Bayonne">
-                <p>Bayonne</p>
-                <button>Victoire</button>
+                <p></p>
+                <button>Bayonne</button>
+            </div>
+        </div>
+        <div class="match cadre">
+            <div class="team team-left">
+                <img src="montpellier_logo.png" alt="Logo Montpellier">
+                <p></p>
+                <button>Montpellier</button>
+            </div>
+            <div class="match-info">
+                <p>26/11 à 16h30</p>
+                <button>Match nul</button>
+            </div>
+            <div class="team team-right">
+                <img src="section_logo.png" alt="Logo Section">
+                <p></p>
+                <button>Section Paloise</button>
+            </div>
+        </div>
+        <div class="match cadre">
+            <div class="team team-left">
+                <img src="toulouse_logo.svg" alt="Logo Toulouse">
+                <p></p>
+                <button>Toulouse</button>
+            </div>
+            <div class="match-info">
+                <p>26/11 à 16h30</p>
+                <button>Match nul</button>
+            </div>
+            <div class="team team-right">
+                <img src="perpignan_logo.svg" alt="Logo Perpignan">
+                <p></p>
+                <button>Perpignan</button>
             </div>
         </div>
     </main>
     <footer>
         <p>&copy; 2023 Top 14. Tous droits réservés.</p>
     </footer>
+
+    <!-- JavaScript intégré -->
+    <script>
+        document.querySelectorAll('.match button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                // Réinitialise la couleur de tous les boutons
+                document.querySelectorAll('.match button').forEach(btn => {
+                    btn.style.backgroundColor = ''; 
+                });
+
+                // Change la couleur du bouton cliqué
+                e.target.style.backgroundColor = 'rgb(255, 196, 0)';
+            });
+        });
+    </script>
 </body>
 </html>
-
