@@ -30,7 +30,7 @@ body {
   .gold-text {
       font-size: 20px;
       font-weight: bold;
-      background: url('Image_Dore.jpg') no-repeat;
+      background: url('/static/Image_Dore.jpg') no-repeat;
       background-size: cover;
       -webkit-background-clip: text;
       background-clip: text;
@@ -47,7 +47,7 @@ body {
   nav ul li a {
       font-size: 10px;
       font-weight: bold;
-      background: url('Image_Dore.jpg') no-repeat;
+      background: url('/static/Image_Dore.jpg') no-repeat;
       background-size: cover;
       -webkit-background-clip: text;
       background-clip: text;
@@ -57,7 +57,7 @@ body {
   .connect-button {
       font-size: 18px;
       font-weight: bold;
-      background: url('Image_Dore.jpg') no-repeat;
+      background: url('/static/Image_Dore.jpg') no-repeat;
       background-size: cover;
       color: transparent;
       border: none;
@@ -135,7 +135,7 @@ nav ul li a {
 
 /* Style pour le bouton de connexion */
 .connect-button {
-    background: url('Image_Dore.jpg') no-repeat;
+    background: url('/static/Image_Dore.jpg') no-repeat;
     border: none;
     padding: 10px 20px;
     color: white;
@@ -184,7 +184,7 @@ h1 {
     left: -8px;
     right: -8px;
     bottom: -8px;
-    background: url('Image_Dore.jpg') no-repeat;
+    background: url('/static/Image_Dore.jpg') no-repeat;
     background-size: cover;
     border-radius: 10px;
     z-index: -1; /* Place les pseudo-éléments derrière le contenu */
@@ -227,7 +227,7 @@ button {
 
 /* Style pour les boutons au survol */
 button:hover {
-    background: url('Image_Dore.jpg') no-repeat;
+    background: url('/static/Image_Dore.jpg') no-repeat;
 }
 
 
