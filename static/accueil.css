@@ -17,7 +17,7 @@ header {
 .gold-text {
   font-size: 20px;
   font-weight: bold;
-  background: url('Image_Dore.jpg') no-repeat;
+  background: url('static/Image_Dore.jpg') no-repeat;
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
@@ -39,7 +39,7 @@ nav ul li {
 nav ul li a {
   font-size: 10px;
   font-weight: bold;
-  background: url('Image_Dore.jpg') no-repeat;
+  background: url('static/Image_Dore.jpg') no-repeat;
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
@@ -50,7 +50,7 @@ nav ul li a {
 .connect-button {
   font-size: 18px;
   font-weight: bold;
-  background: url('Image_Dore.jpg') no-repeat;
+  background: url('static/Image_Dore.jpg') no-repeat;
   background-size: cover;
   color: transparent;
   border: none;
